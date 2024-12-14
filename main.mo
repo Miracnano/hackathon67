@@ -23,10 +23,12 @@ actor {
     counter += value;
     return counter
   };
+
   public func decValue(value : Nat) : async Nat {
     if (counter >= value) {
       counter -= value
     };
     return counter
-  }
+  };
+
 }
